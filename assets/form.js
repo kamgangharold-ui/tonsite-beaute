@@ -50,7 +50,7 @@
     form.hidden = true;
     var res = document.getElementById('result');
     res.hidden = false;
-    document.getElementById('result-text').textContent = "Copiez votre demande, puis collez-la dans un message Instagram à @tonsite.beaute. On vous répond par message.";
+    document.getElementById('result-text').textContent = "Copiez votre demande, puis collez-la dans un message Instagram à @tonsitebeaute. On vous répond par message.";
     var s = document.getElementById('summary');
     s.value = text;
     document.getElementById('copy').addEventListener('click', function () {
