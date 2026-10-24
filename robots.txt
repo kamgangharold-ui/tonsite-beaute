@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://kamgangharold-ui.github.io/tonsite-beaute/sitemap.xml

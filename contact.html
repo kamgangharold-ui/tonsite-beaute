@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Demander ma page | tonsite.beaute</title>
+<meta name="description" content="Formulaire de demande, sans appel.">
+
+<link rel="canonical" href="https://kamgangharold-ui.github.io/tonsite-beaute/contact.html">
+<meta property="og:title" content="Demander ma page | tonsite.beaute">
+<meta property="og:description" content="Formulaire de demande, sans appel.">
+<meta property="og:image" content="https://kamgangharold-ui.github.io/tonsite-beaute/assets/logo-512.png">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/favicon-64.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+<header class="site"><div class="wrap">
+<a class="brand" href="index.html"><img src="assets/logo-512.png" alt="" width="44" height="44"><span>tonsite<b>.beaute</b></span></a>
+<nav class="main" aria-label="Menu"><a href="index.html#exemples">Exemples</a><a href="offre.html">Offre et prix</a><a href="contact.html">Demander ma page</a></nav>
+</div></header>
+<main id="contenu">
+
+<section><div class="wrap" style="max-width:820px">
+<h1>Demander ma page</h1>
+<p>Dix questions, sans appel. On vous répond par message avec un devis ou une question.</p>
+<div class="alert" id="mode-note"></div>
+<form id="intake" novalidate>
+<label for="formule">Formule</label>
+<select id="formule" name="formule" required>
+<option value="">Choisir</option><option value="solo">Solo, 19 € par mois</option><option value="salon">Salon, 490 €</option><option value="test">Place de test gratuite</option><option value="question">Juste une question</option>
+</select>
+<label for="metier">Vous êtes</label>
+<select id="metier" name="metier" required>
+<option value="">Choisir</option>
+<option>Prothésiste ongulaire, technicienne cils ou sourcils, esthéticienne en solo</option>
+<option>Coiffeuse ou coiffeur à domicile</option>
+<option>Salon de coiffure</option>
+<option>Institut de beauté avec équipe</option>
+<option>Autre</option>
+</select>
+<div class="row">
+<div><label for="nom">Votre prénom et nom</label><input id="nom" name="nom" autocomplete="name" required></div>
+<div><label for="commerce">Nom du salon ou de l'activité</label><input id="commerce" name="commerce" required></div>
+</div>
+<div class="row">
+<div><label for="ville">Ville</label><input id="ville" name="ville" autocomplete="address-level2" required></div>
+<div><label for="insta">Votre Instagram ou TikTok</label><input id="insta" name="insta" placeholder="@votrecompte"></div>
+</div>
+<label for="outil">Aujourd'hui, vos clientes réservent comment ?</label>
+<select id="outil" name="outil" required>
+<option value="">Choisir</option><option>DM, SMS ou téléphone</option><option>Planity</option><option>Fresha</option><option>Booksy</option><option>Treatwell</option><option>Autre outil</option>
+</select>
+<label for="lien">Votre lien de réservation (si vous en avez un)</label><input id="lien" name="lien" type="url" placeholder="https://">
+<div class="row">
+<div><label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+<div><label for="tel">Téléphone (facultatif)</label><input id="tel" name="tel" type="tel" autocomplete="tel"></div>
+</div>
+<label for="message">Ce que vous voulez sur votre page (prestations, ambiance, question)</label><textarea id="message" name="message"></textarea>
+<label class="check"><input type="checkbox" id="rgpd" name="rgpd" required> J'ai lu la <a href="confidentialite.html">notice de confidentialité</a>. Mes réponses servent uniquement à préparer mon devis et ma page.</label>
+<p><button class="btn" type="submit">Envoyer ma demande</button></p>
+<p id="form-error" class="draft" hidden></p>
+</form>
+<div id="result" hidden>
+<h2>Votre demande est prête</h2>
+<p id="result-text"></p>
+<textarea id="summary" readonly style="min-height:220px"></textarea>
+<p><button class="btn dark" type="button" id="copy">Copier ma demande</button> <a class="btn" href="https://ig.me/m/tonsite.beaute" id="dm">Ouvrir Instagram</a></p>
+</div>
+</div></section>
+<script>window.AGENCY_EMAIL = '';</script>
+<script src="assets/form.js"></script>
+
+</main>
+<footer class="site"><div class="wrap">
+<div><strong>tonsite.beaute</strong><br>Sites de réservation pour instituts, ongleries, cils et salons de coiffure.<br>
+Service vendu et facturé par Frank Nathan Kamokoue Sikati (EI, micro-entreprise), SIRET 108 086 612 00018.<br>TVA non applicable, art. 293 B du CGI.</div>
+<div><a href="mentions-legales.html">Mentions légales</a><br><a href="cgv.html">Conditions générales de vente</a><br>
+<a href="confidentialite.html">Confidentialité</a><br><a href="contact.html">Contact</a></div>
+<div><a href="https://www.instagram.com/tonsite.beaute/" rel="me">Instagram @tonsite.beaute</a><br><a href="https://www.tiktok.com/@tonsite.beaute" rel="me">TikTok @tonsite.beaute</a><br>
+Ce site ne dépose aucun cookie et ne contient aucun traceur.<br>Mis à jour le 24 octobre 2026.</div>
+</div></footer>
+</body>
+</html>
