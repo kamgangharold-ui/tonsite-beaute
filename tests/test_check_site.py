@@ -135,7 +135,7 @@ class Report(unittest.TestCase):
         findings, quantities = check_site.check(FIXTURES / "good")
         md = check_site.render_markdown(findings, quantities)
         self.assertIn("not found", md)
-        self.assertNotIn("—", md)
+        self.assertNotIn(chr(0x2014), md)
 
     def test_text_summary(self):
         findings, _ = check_site.check(FIXTURES / "broken")
