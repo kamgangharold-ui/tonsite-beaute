@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
+Disallow: /.claude/
 Sitemap: https://kamgangharold-ui.github.io/tonsite-beaute/sitemap.xml
