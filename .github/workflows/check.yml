@@ -19,3 +19,5 @@ jobs:
         run: python3 tools/check_site.py
       - name: Run the tests
         run: python3 -m unittest discover -s tests -v
+      - name: Check the build is byte identical
+        run: python3 -m unittest tests.test_build_identical -v
