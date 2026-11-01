@@ -16,7 +16,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
 
-SKIP_DIRS = {".git", "node_modules", "tools"}
+SKIP_DIRS = {".git", "node_modules", "tools", "build"}
 SKIP_PREFIXES = ("tests/fixtures",)
 NOINDEX_PAGES = ("404.html",)
 NOINDEX_DIRS = ("demos/",)
